@@ -1,19 +1,4 @@
 function xyz = node_drop_3d_GPT(box, ninit, dotmax, radius, vargin)
-% NODE_DROP_3D generates quasi-uniform nodes in a 3-D bounded box with
-% spacing between nodes specified by an exclusion radius function
-%
-% Copyright (C) 2019 Kiera van der Sande
-%
-% --- Input parameters ---
-%   box         Size of box be filled by nodes: [xmin,xmax,ymin,ymax,zmin,zmax]
-%   ninit       Number of PDP entries: [xinit,yinit]
-%   dotmax      Upper bound for number of nodes to place
-%   radius      The function radius(xyz) provides exclusion radius to be used
-%               at location (x,y,z).
-%   vargin      Additional parameters for exclusion radius function
-%
-% --- Output parameter ---
-%   xyz         Array xyz(:,3) with the generated node locations
 
 dotnr   = 0;                            % Counter for the placed nodes
 rng(0);                                 % Initialize random number generator
